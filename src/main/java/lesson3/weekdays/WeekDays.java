@@ -1,12 +1,10 @@
 package lesson3.weekdays;
-
 import java.util.Arrays;
 
 enum Day {
     WORKDAY,
     WEEKEND
 }
-
 public enum WeekDays {
     MONDAY(Day.WORKDAY),
     TUESDAY(Day.WORKDAY),
@@ -17,17 +15,40 @@ public enum WeekDays {
     SUNDAY(Day.WEEKEND);
 
     private final Day day;
+
     private WeekDays(final Day day) {
         this.day = day;
-}
-public boolean isWorkday() {
-        return this.day == Day.WORKDAY;
-}
-public boolean isWeekend() {
-        return this.day == Day.WEEKEND;
-}
-    // возвращать true если день с понедельника по пятницу включительно
-    // возвращать true если день суббота или воскресенье
+    }
+
+    public Day getDay() {
+        return day;
+    }
+
+    public static boolean isWorkday(String day) {
+//        return this.day == Day.WORKDAY;
+        switch (day) {
+            case "MONDAY":
+            case "TUESDAY":
+            case "WEDNESDAY":
+            case "THURSDAY":
+            case "FRIDAY":
+                return true;
+        }
+        return false;
+    }
+
+    public static boolean isWeekend(String day) {
+//            return this.day == Day.WEEKEND;
+        switch (day) {
+            case "SATURDAY":
+            case "SUNDAY":
+                return true;
+        }
+        return false;
+    }
+
+// возвращать true если день с понедельника по пятницу включительно
+// возвращать true если день суббота или воскресенье
 
     public static void main(String[] args) {
         System.out.println(MONDAY);
@@ -37,14 +58,16 @@ public boolean isWeekend() {
                         WeekDays.values()
                 )
         );
-
+//
         WeekDays day = WeekDays.FRIDAY;
         WeekDays day1 = WeekDays.valueOf("WEDNESDAY");
-//        day = WeekDays.valueOf("HELLO");
+////        day = WeekDays.valueOf("HELLO");
         System.out.println(WeekDays.valueOf("WEDNESDAY").ordinal());
         System.out.println(WeekDays.values()[2]);
 
-
+        System.out.println(isWeekend(String.valueOf(FRIDAY)));
+        System.out.println(isWeekend(String.valueOf(SUNDAY)));
+//
     }
 }
 
