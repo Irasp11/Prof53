@@ -38,7 +38,7 @@ public class MyDate {
     }
 
     // добавить функицю
-    void add(int days) {
+   public void add(int days) {
         while (days > 0) {
             int daysInMonth = getDaysInMonth(year, month);
             int daysLeftInMonth = daysInMonth - day + 1;
@@ -64,6 +64,9 @@ public class MyDate {
                 days = 0;
             }
         }
+       System.out.print(day + "-");
+       System.out.print(month + "-");
+       System.out.println(year);
     }
 
     int getDaysInMonth(int year, int month) {
@@ -79,4 +82,9 @@ public class MyDate {
     boolean isLeapYear(int year) {
         return (year % 4 == 0 && year % 100 != 0) || year % 400 == 0;
     }
-}
+
+    public static void main(String[] args) {
+        MyDate date = new MyDate(2022, 9, 11);
+        date.add(17);
+    }
+ }
