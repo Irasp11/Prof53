@@ -26,14 +26,17 @@ public class AddCustomerPage extends BankManagerLoginPage {
     }
 
     public void fillLastNameField(String lastName) {
+
         lastNameField.sendKeys(lastName);
     }
 
     public void fillPostCodeField(String postCode) {
+
         postCodeField.sendKeys(postCode);
     }
 
     public void clickOnAddCustomerButton() {
+
         click(addCustomerButton);
     }
 

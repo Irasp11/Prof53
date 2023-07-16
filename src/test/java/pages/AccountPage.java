@@ -7,6 +7,7 @@ import org.openqa.selenium.support.FindBy;
 public class AccountPage extends PageBase {
 
     public AccountPage(WebDriver driver) {
+
         super(driver);
     }
 
@@ -14,6 +15,7 @@ public class AccountPage extends PageBase {
     WebElement customerFirstAndLastName;
 
     public String getCustomerFirstAndLastName() {
+
         return customerFirstAndLastName.getText();
     }
 }
