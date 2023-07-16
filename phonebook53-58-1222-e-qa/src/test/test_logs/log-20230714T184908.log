@@ -1,0 +1,200 @@
+1687 [main] DEBUG org.testng.TestNG - suiteXmlPath: "/Users/arturandreasian/Library/Caches/JetBrains/IntelliJIdea2023.1/temp-testng-customsuite.xml"
+2172 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  /Users/arturandreasian/Library/Caches/JetBrains/IntelliJIdea2023.1/temp-testng-customsuite.xml
+
+7340 [main] DEBUG o.a.h.i.c.BasicClientConnectionManager - Get connection for route {}->http://phonebook.telran-edu.de:8080
+7472 [main] DEBUG o.a.h.i.c.DefaultClientConnectionOperator - Connecting to phonebook.telran-edu.de:8080
+7596 [main] DEBUG o.a.h.c.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+7598 [main] DEBUG o.a.h.c.protocol.RequestAuthCache - Auth cache not set in the context
+7598 [main] DEBUG o.a.h.c.p.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+7600 [main] DEBUG o.a.h.c.p.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+7602 [main] DEBUG o.a.h.impl.client.DefaultHttpClient - Attempt 1 to execute request
+7603 [main] DEBUG o.a.h.i.c.DefaultClientConnection - Sending request: POST /api/contact HTTP/1.1
+7603 [main] DEBUG org.apache.http.wire -  >> "POST /api/contact HTTP/1.1[\r][\n]"
+7607 [main] DEBUG org.apache.http.wire -  >> "Access-Token: eyJhbGciOiJIUzUxMiJ9.eyJ1c2VybmFtZSI6InRlc3RAZ21haWwuY29tIiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9VU0VSIl0sImV4cCI6MjEwNjk3ODI5Nn0.GM1wsoRV2QoAsD6wKmIk7N49DDpuCejK4BC9H9YItJvesH5vft8HO2uqTPnGQJwJ5oXKS2OILqP1yoanMnIMkA[\r][\n]"
+7607 [main] DEBUG org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+7607 [main] DEBUG org.apache.http.wire -  >> "Content-Type: application/json[\r][\n]"
+7607 [main] DEBUG org.apache.http.wire -  >> "Content-Length: 155[\r][\n]"
+7607 [main] DEBUG org.apache.http.wire -  >> "Host: phonebook.telran-edu.de:8080[\r][\n]"
+7607 [main] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+7607 [main] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)[\r][\n]"
+7607 [main] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+7608 [main] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+7608 [main] DEBUG org.apache.http.headers - >> POST /api/contact HTTP/1.1
+7608 [main] DEBUG org.apache.http.headers - >> Access-Token: eyJhbGciOiJIUzUxMiJ9.eyJ1c2VybmFtZSI6InRlc3RAZ21haWwuY29tIiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9VU0VSIl0sImV4cCI6MjEwNjk3ODI5Nn0.GM1wsoRV2QoAsD6wKmIk7N49DDpuCejK4BC9H9YItJvesH5vft8HO2uqTPnGQJwJ5oXKS2OILqP1yoanMnIMkA
+7608 [main] DEBUG org.apache.http.headers - >> Accept: */*
+7608 [main] DEBUG org.apache.http.headers - >> Content-Type: application/json
+7608 [main] DEBUG org.apache.http.headers - >> Content-Length: 155
+7608 [main] DEBUG org.apache.http.headers - >> Host: phonebook.telran-edu.de:8080
+7608 [main] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+7608 [main] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+7608 [main] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+7608 [main] DEBUG org.apache.http.wire -  >> "{"firstName":"01fcf8ab-f950-42a9-b712-bec70d6c2775","lastName":"6292f023-531f-463e-afda-df38608ddf8a","description":"973bbd91-07b9-4f4d-8557-0df40c837ea6"}"
+7687 [main] DEBUG org.apache.http.wire -  << "HTTP/1.1 201 [\r][\n]"
+7691 [main] DEBUG org.apache.http.wire -  << "Vary: Origin[\r][\n]"
+7692 [main] DEBUG org.apache.http.wire -  << "Vary: Access-Control-Request-Method[\r][\n]"
+7692 [main] DEBUG org.apache.http.wire -  << "Vary: Access-Control-Request-Headers[\r][\n]"
+7692 [main] DEBUG org.apache.http.wire -  << "X-Content-Type-Options: nosniff[\r][\n]"
+7693 [main] DEBUG org.apache.http.wire -  << "X-XSS-Protection: 1; mode=block[\r][\n]"
+7693 [main] DEBUG org.apache.http.wire -  << "Cache-Control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+7693 [main] DEBUG org.apache.http.wire -  << "Pragma: no-cache[\r][\n]"
+7694 [main] DEBUG org.apache.http.wire -  << "Expires: 0[\r][\n]"
+7694 [main] DEBUG org.apache.http.wire -  << "X-Frame-Options: DENY[\r][\n]"
+7694 [main] DEBUG org.apache.http.wire -  << "Content-Type: application/json[\r][\n]"
+7694 [main] DEBUG org.apache.http.wire -  << "Transfer-Encoding: chunked[\r][\n]"
+7694 [main] DEBUG org.apache.http.wire -  << "Date: Fri, 14 Jul 2023 15:49:16 GMT[\r][\n]"
+7694 [main] DEBUG org.apache.http.wire -  << "Keep-Alive: timeout=60[\r][\n]"
+7694 [main] DEBUG org.apache.http.wire -  << "Connection: keep-alive[\r][\n]"
+7695 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+7697 [main] DEBUG o.a.h.i.c.DefaultClientConnection - Receiving response: HTTP/1.1 201 
+7698 [main] DEBUG org.apache.http.headers - << HTTP/1.1 201 
+7701 [main] DEBUG org.apache.http.headers - << Vary: Origin
+7702 [main] DEBUG org.apache.http.headers - << Vary: Access-Control-Request-Method
+7702 [main] DEBUG org.apache.http.headers - << Vary: Access-Control-Request-Headers
+7703 [main] DEBUG org.apache.http.headers - << X-Content-Type-Options: nosniff
+7703 [main] DEBUG org.apache.http.headers - << X-XSS-Protection: 1; mode=block
+7703 [main] DEBUG org.apache.http.headers - << Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+7703 [main] DEBUG org.apache.http.headers - << Pragma: no-cache
+7705 [main] DEBUG org.apache.http.headers - << Expires: 0
+7707 [main] DEBUG org.apache.http.headers - << X-Frame-Options: DENY
+7718 [main] DEBUG org.apache.http.headers - << Content-Type: application/json
+7719 [main] DEBUG org.apache.http.headers - << Transfer-Encoding: chunked
+7723 [main] DEBUG org.apache.http.headers - << Date: Fri, 14 Jul 2023 15:49:16 GMT
+7723 [main] DEBUG org.apache.http.headers - << Keep-Alive: timeout=60
+7723 [main] DEBUG org.apache.http.headers - << Connection: keep-alive
+7742 [main] DEBUG o.a.h.impl.client.DefaultHttpClient - Connection can be kept alive for 60000 MILLISECONDS
+7750 [main] DEBUG i.r.internal.RestAssuredHttpBuilder - Parsing response as: application/json
+7751 [main] DEBUG i.r.internal.RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+7813 [main] DEBUG org.apache.http.wire -  << "a5[\r][\n]"
+7814 [main] DEBUG org.apache.http.wire -  << "{"id":7043,"firstName":"01fcf8ab-f950-42a9-b712-bec70d6c2775","lastName":"6292f023-531f-463e-afda-df38608ddf8a","description":"973bbd91-07b9-4f4d-8557-0df40c837ea6"}"
+7816 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+7817 [main] DEBUG org.apache.http.wire -  << "0[\r][\n]"
+7818 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+7819 [main] DEBUG o.a.h.i.c.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@1d6d1d42
+7819 [main] DEBUG o.a.h.i.c.BasicClientConnectionManager - Connection can be kept alive for 60000 MILLISECONDS
+9838 [main] DEBUG o.a.h.i.c.BasicClientConnectionManager - Get connection for route {}->http://phonebook.telran-edu.de:8080
+9839 [main] DEBUG o.a.h.i.c.DefaultClientConnectionOperator - Connecting to phonebook.telran-edu.de:8080
+9905 [main] DEBUG o.a.h.c.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+9905 [main] DEBUG o.a.h.c.protocol.RequestAuthCache - Auth cache not set in the context
+9906 [main] DEBUG o.a.h.c.p.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+9906 [main] DEBUG o.a.h.c.p.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+9906 [main] DEBUG o.a.h.impl.client.DefaultHttpClient - Attempt 1 to execute request
+9906 [main] DEBUG o.a.h.i.c.DefaultClientConnection - Sending request: POST /api/email HTTP/1.1
+9906 [main] DEBUG org.apache.http.wire -  >> "POST /api/email HTTP/1.1[\r][\n]"
+9920 [main] DEBUG org.apache.http.wire -  >> "Access-Token: eyJhbGciOiJIUzUxMiJ9.eyJ1c2VybmFtZSI6InRlc3RAZ21haWwuY29tIiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9VU0VSIl0sImV4cCI6MjEwNjk3ODI5Nn0.GM1wsoRV2QoAsD6wKmIk7N49DDpuCejK4BC9H9YItJvesH5vft8HO2uqTPnGQJwJ5oXKS2OILqP1yoanMnIMkA[\r][\n]"
+9920 [main] DEBUG org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+9920 [main] DEBUG org.apache.http.wire -  >> "Content-Type: application/json[\r][\n]"
+9922 [main] DEBUG org.apache.http.wire -  >> "Content-Length: 50[\r][\n]"
+9922 [main] DEBUG org.apache.http.wire -  >> "Host: phonebook.telran-edu.de:8080[\r][\n]"
+9923 [main] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+9923 [main] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)[\r][\n]"
+9923 [main] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+9924 [main] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+9924 [main] DEBUG org.apache.http.headers - >> POST /api/email HTTP/1.1
+9924 [main] DEBUG org.apache.http.headers - >> Access-Token: eyJhbGciOiJIUzUxMiJ9.eyJ1c2VybmFtZSI6InRlc3RAZ21haWwuY29tIiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9VU0VSIl0sImV4cCI6MjEwNjk3ODI5Nn0.GM1wsoRV2QoAsD6wKmIk7N49DDpuCejK4BC9H9YItJvesH5vft8HO2uqTPnGQJwJ5oXKS2OILqP1yoanMnIMkA
+9925 [main] DEBUG org.apache.http.headers - >> Accept: */*
+9925 [main] DEBUG org.apache.http.headers - >> Content-Type: application/json
+9926 [main] DEBUG org.apache.http.headers - >> Content-Length: 50
+9926 [main] DEBUG org.apache.http.headers - >> Host: phonebook.telran-edu.de:8080
+9926 [main] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+9927 [main] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+9927 [main] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+9927 [main] DEBUG org.apache.http.wire -  >> "{"email":"glenn.bauch@yahoo.com","contactId":7043}"
+9997 [main] DEBUG org.apache.http.wire -  << "HTTP/1.1 201 [\r][\n]"
+9997 [main] DEBUG org.apache.http.wire -  << "Vary: Origin[\r][\n]"
+9997 [main] DEBUG org.apache.http.wire -  << "Vary: Access-Control-Request-Method[\r][\n]"
+9998 [main] DEBUG org.apache.http.wire -  << "Vary: Access-Control-Request-Headers[\r][\n]"
+9998 [main] DEBUG org.apache.http.wire -  << "X-Content-Type-Options: nosniff[\r][\n]"
+9998 [main] DEBUG org.apache.http.wire -  << "X-XSS-Protection: 1; mode=block[\r][\n]"
+9999 [main] DEBUG org.apache.http.wire -  << "Cache-Control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+9999 [main] DEBUG org.apache.http.wire -  << "Pragma: no-cache[\r][\n]"
+9999 [main] DEBUG org.apache.http.wire -  << "Expires: 0[\r][\n]"
+9999 [main] DEBUG org.apache.http.wire -  << "X-Frame-Options: DENY[\r][\n]"
+9999 [main] DEBUG org.apache.http.wire -  << "Content-Length: 0[\r][\n]"
+10000 [main] DEBUG org.apache.http.wire -  << "Date: Fri, 14 Jul 2023 15:49:18 GMT[\r][\n]"
+10000 [main] DEBUG org.apache.http.wire -  << "Keep-Alive: timeout=60[\r][\n]"
+10000 [main] DEBUG org.apache.http.wire -  << "Connection: keep-alive[\r][\n]"
+10000 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+10001 [main] DEBUG o.a.h.i.c.DefaultClientConnection - Receiving response: HTTP/1.1 201 
+10001 [main] DEBUG org.apache.http.headers - << HTTP/1.1 201 
+10001 [main] DEBUG org.apache.http.headers - << Vary: Origin
+10001 [main] DEBUG org.apache.http.headers - << Vary: Access-Control-Request-Method
+10002 [main] DEBUG org.apache.http.headers - << Vary: Access-Control-Request-Headers
+10002 [main] DEBUG org.apache.http.headers - << X-Content-Type-Options: nosniff
+10002 [main] DEBUG org.apache.http.headers - << X-XSS-Protection: 1; mode=block
+10002 [main] DEBUG org.apache.http.headers - << Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+10002 [main] DEBUG org.apache.http.headers - << Pragma: no-cache
+10002 [main] DEBUG org.apache.http.headers - << Expires: 0
+10002 [main] DEBUG org.apache.http.headers - << X-Frame-Options: DENY
+10003 [main] DEBUG org.apache.http.headers - << Content-Length: 0
+10003 [main] DEBUG org.apache.http.headers - << Date: Fri, 14 Jul 2023 15:49:18 GMT
+10004 [main] DEBUG org.apache.http.headers - << Keep-Alive: timeout=60
+10004 [main] DEBUG org.apache.http.headers - << Connection: keep-alive
+10006 [main] DEBUG o.a.h.impl.client.DefaultHttpClient - Connection can be kept alive for 60000 MILLISECONDS
+10219 [main] DEBUG o.a.h.i.c.BasicClientConnectionManager - Get connection for route {}->http://phonebook.telran-edu.de:8080
+10221 [main] DEBUG o.a.h.i.c.DefaultClientConnectionOperator - Connecting to phonebook.telran-edu.de:8080
+10285 [main] DEBUG o.a.h.c.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+10287 [main] DEBUG o.a.h.c.protocol.RequestAuthCache - Auth cache not set in the context
+10288 [main] DEBUG o.a.h.c.p.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+10288 [main] DEBUG o.a.h.c.p.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+10288 [main] DEBUG o.a.h.impl.client.DefaultHttpClient - Attempt 1 to execute request
+10289 [main] DEBUG o.a.h.i.c.DefaultClientConnection - Sending request: GET /api/email/7043/all HTTP/1.1
+10289 [main] DEBUG org.apache.http.wire -  >> "GET /api/email/7043/all HTTP/1.1[\r][\n]"
+10289 [main] DEBUG org.apache.http.wire -  >> "Content-Type: application/json[\r][\n]"
+10291 [main] DEBUG org.apache.http.wire -  >> "Access-Token: eyJhbGciOiJIUzUxMiJ9.eyJ1c2VybmFtZSI6InRlc3RAZ21haWwuY29tIiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9VU0VSIl0sImV4cCI6MjEwNjk3ODI5Nn0.GM1wsoRV2QoAsD6wKmIk7N49DDpuCejK4BC9H9YItJvesH5vft8HO2uqTPnGQJwJ5oXKS2OILqP1yoanMnIMkA[\r][\n]"
+10293 [main] DEBUG org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+10294 [main] DEBUG org.apache.http.wire -  >> "Host: phonebook.telran-edu.de:8080[\r][\n]"
+10294 [main] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+10295 [main] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)[\r][\n]"
+10295 [main] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+10296 [main] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+10296 [main] DEBUG org.apache.http.headers - >> GET /api/email/7043/all HTTP/1.1
+10297 [main] DEBUG org.apache.http.headers - >> Content-Type: application/json
+10301 [main] DEBUG org.apache.http.headers - >> Access-Token: eyJhbGciOiJIUzUxMiJ9.eyJ1c2VybmFtZSI6InRlc3RAZ21haWwuY29tIiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9VU0VSIl0sImV4cCI6MjEwNjk3ODI5Nn0.GM1wsoRV2QoAsD6wKmIk7N49DDpuCejK4BC9H9YItJvesH5vft8HO2uqTPnGQJwJ5oXKS2OILqP1yoanMnIMkA
+10302 [main] DEBUG org.apache.http.headers - >> Accept: */*
+10303 [main] DEBUG org.apache.http.headers - >> Host: phonebook.telran-edu.de:8080
+10304 [main] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+10304 [main] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+10305 [main] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+10376 [main] DEBUG org.apache.http.wire -  << "HTTP/1.1 200 [\r][\n]"
+10376 [main] DEBUG org.apache.http.wire -  << "Vary: Origin[\r][\n]"
+10377 [main] DEBUG org.apache.http.wire -  << "Vary: Access-Control-Request-Method[\r][\n]"
+10377 [main] DEBUG org.apache.http.wire -  << "Vary: Access-Control-Request-Headers[\r][\n]"
+10377 [main] DEBUG org.apache.http.wire -  << "X-Content-Type-Options: nosniff[\r][\n]"
+10378 [main] DEBUG org.apache.http.wire -  << "X-XSS-Protection: 1; mode=block[\r][\n]"
+10378 [main] DEBUG org.apache.http.wire -  << "Cache-Control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+10378 [main] DEBUG org.apache.http.wire -  << "Pragma: no-cache[\r][\n]"
+10378 [main] DEBUG org.apache.http.wire -  << "Expires: 0[\r][\n]"
+10379 [main] DEBUG org.apache.http.wire -  << "X-Frame-Options: DENY[\r][\n]"
+10380 [main] DEBUG org.apache.http.wire -  << "Content-Type: application/json[\r][\n]"
+10380 [main] DEBUG org.apache.http.wire -  << "Transfer-Encoding: chunked[\r][\n]"
+10381 [main] DEBUG org.apache.http.wire -  << "Date: Fri, 14 Jul 2023 15:49:18 GMT[\r][\n]"
+10381 [main] DEBUG org.apache.http.wire -  << "Keep-Alive: timeout=60[\r][\n]"
+10381 [main] DEBUG org.apache.http.wire -  << "Connection: keep-alive[\r][\n]"
+10381 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+10381 [main] DEBUG o.a.h.i.c.DefaultClientConnection - Receiving response: HTTP/1.1 200 
+10382 [main] DEBUG org.apache.http.headers - << HTTP/1.1 200 
+10382 [main] DEBUG org.apache.http.headers - << Vary: Origin
+10382 [main] DEBUG org.apache.http.headers - << Vary: Access-Control-Request-Method
+10382 [main] DEBUG org.apache.http.headers - << Vary: Access-Control-Request-Headers
+10382 [main] DEBUG org.apache.http.headers - << X-Content-Type-Options: nosniff
+10382 [main] DEBUG org.apache.http.headers - << X-XSS-Protection: 1; mode=block
+10382 [main] DEBUG org.apache.http.headers - << Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+10382 [main] DEBUG org.apache.http.headers - << Pragma: no-cache
+10382 [main] DEBUG org.apache.http.headers - << Expires: 0
+10382 [main] DEBUG org.apache.http.headers - << X-Frame-Options: DENY
+10383 [main] DEBUG org.apache.http.headers - << Content-Type: application/json
+10386 [main] DEBUG org.apache.http.headers - << Transfer-Encoding: chunked
+10386 [main] DEBUG org.apache.http.headers - << Date: Fri, 14 Jul 2023 15:49:18 GMT
+10387 [main] DEBUG org.apache.http.headers - << Keep-Alive: timeout=60
+10388 [main] DEBUG org.apache.http.headers - << Connection: keep-alive
+10390 [main] DEBUG o.a.h.impl.client.DefaultHttpClient - Connection can be kept alive for 60000 MILLISECONDS
+10392 [main] DEBUG i.r.internal.RestAssuredHttpBuilder - Parsing response as: application/json
+10394 [main] DEBUG i.r.internal.RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+10398 [main] DEBUG org.apache.http.wire -  << "3d[\r][\n]"
+10398 [main] DEBUG org.apache.http.wire -  << "[{"id":851,"email":"glenn.bauch@yahoo.com","contactId":7043}]"
+10400 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+10400 [main] DEBUG org.apache.http.wire -  << "0[\r][\n]"
+10401 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+10401 [main] DEBUG o.a.h.i.c.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@5b55c3d6
+10403 [main] DEBUG o.a.h.i.c.BasicClientConnectionManager - Connection can be kept alive for 60000 MILLISECONDS
