@@ -74,7 +74,6 @@ public class CustomersPage extends BankManagerLoginPage {
 
     //driver.findElement(By.xpath("//*[@ng-model='searchCustomer']")).clear() == searchCustomerField.clear()
 
-
     public void filterCustomer(String customer) {
         searchCustomerField.sendKeys(customer);
     }
