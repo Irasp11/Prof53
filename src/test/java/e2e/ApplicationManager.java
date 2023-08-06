@@ -23,5 +23,6 @@ public class ApplicationManager {
     }
 
 }
+
 //  driver.close(); - закрывает текущую вкладку
 
