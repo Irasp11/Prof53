@@ -140,5 +140,6 @@ public class AddCustomerAndDeleteTest extends TestBase {
 
         customersPage.clickOnSortLink(SortValues.postCd);
         customersPage.checkSortDirection(SortDirections.down);
+
     }
 }
