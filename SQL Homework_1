@@ -45,13 +45,15 @@ SELECT
 	t1.City, 
 	t2.amount
 FROM Customers t1
-JOIN orders t2 ON t1.id = t2.customer_id;
+JOIN orders t2 
+ON t1.id = t2.customer_id;
 
 SELECT 
 	t1.Name,
 	t2.id
 FROM customers t1
-JOIN orders t2 ON t1.id = t2.customer_id
+JOIN orders t2 
+ON t1.id = t2.customer_id
 WHERE t2.amount > 1000;
 
 SELECT
@@ -64,19 +66,22 @@ JOIN Customers t1 ON t2.amount = t1.city;
  	t1. City,
  	t2.amount AS Order_Amount
  FROM Customers t1
- JOIN orders t2 ON t1.id = t2.customer_id;
+ JOIN orders t2 
+ ON t1.id = t2.customer_id;
 
 SELECT
 	t1.Name,
 	t2.customer_id,
 	t2.amount
 FROM Customers t1
-JOIN orders t2 ON t1.id = t2.customer_id
+JOIN orders t2 
+ON t1.id = t2.customer_id
 WHERE t1.Name = 'Anna';
 
 SELECT
 	t1.Name,
 	t2.amount
 FROM customers t1
-JOIN orders t2 ON t1.id = t2.customer_id;
+JOIN orders t2 
+ON t1.id = t2.customer_id;
 
