@@ -1,0 +1,28 @@
+USE hw3;
+
+CREATE TABLE Employees (
+    employeeid INT AUTO_INCREMENT PRIMARY KEY,
+    firstname VARCHAR(50),
+    last_name VARCHAR(50),
+    email VARCHAR(255) UNIQUE,
+    salary DECIMAL(10, 2)
+);
+
+INSERT INTO Employees (employeeid, firstname, last_name, email, salary)
+VALUES
+    (1, 'Иван', 'Петров', 'ivan@example.com', 50000),
+    (2, 'Елена', 'Сидорова', 'elena@example.com', 60000),
+    (3, 'Алексей', 'Иванов', 'alex@example.com', 55000);
+
+   UPDATE Employees
+SET salary = 60000
+WHERE employeeid = 3;
+
+UPDATE Employees
+SET salary = salary * 2
+WHERE firstname = 'Иван';
+
+DELETE FROM Employees
+WHERE employeeid = 2;
+
+DROP TABLE Employees;
