@@ -1,0 +1,105 @@
+
+USE hw4;
+
+CREATE TABLE students (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    first_name VARCHAR(255) NOT NULL,
+    last_name VARCHAR(255) NOT NULL,
+    age INT
+);
+
+-- Создание таблицы "disciplines"
+CREATE TABLE disciplines (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    category VARCHAR(255)
+);
+
+
+-- Создание таблицы "marks"
+CREATE TABLE marks (
+    studentid INT,
+    disciplineid INT,
+    mark INT
+);
+
+
+-- Вставка данных в таблицу "students"
+INSERT INTO students (first_name, last_name, age)
+VALUES
+    ('Ivan', 'Ivanov', 20),
+    ('Mariya', 'Petrova', 22),
+    ('Alexey', 'Sidorov', 21);
+
+
+-- Вставка данных в таблицу "disciplines"
+INSERT INTO disciplines (title, category)
+VALUES
+    ('Math', 'Required'),
+    ('History', 'Required'),
+    ('Foreign language', 'Optional');
+
+
+-- Вставка данных в таблицу "marks"
+INSERT INTO marks (studentid, disciplineid, mark)
+VALUES
+    (1, 1, 85),
+    (1, 2, 78),
+    (2, 1, 92),
+    (2, 3, 88),
+    (3, 2, 75);
+    
+   
+SELECT 
+	t1.title AS discipline, 
+	AVG(t3.age) AS avg_age
+FROM students t3
+INNER JOIN marks t2 
+ON t3.id = t2.studentid
+INNER JOIN disciplines t1 
+ON t2.disciplineid = t1.id
+GROUP BY t1.title;
+
+SELECT 
+	t1.first_name, 
+	t1.last_name, 
+	COUNT(t2.mark) AS num_of_marks
+FROM students t1
+LEFT JOIN marks t2 
+ON t1.id = t2.studentid
+GROUP BY t1.first_name, t1.last_name;
+
+SELECT 
+	t1.title AS discipline, 
+	COALESCE(AVG(t2.mark), 0) AS avg_mark
+FROM disciplines t1
+LEFT JOIN marks t2 
+ON t1.id = t2.disciplineid
+GROUP BY t1.title;
+
+SELECT 
+	t1.first_name, 
+	t1.last_name, t3.title, 
+	MAX(t2.mark) AS max_mark
+FROM students t1
+JOIN marks t2 
+ON t1.id = t2.studentid
+JOIN disciplines t3 
+ON t2.disciplineid = t3.id
+GROUP BY t1.first_name, t1.last_name, t3.title;
+
+SELECT 
+	AVG(t2.mark) AS avg_mark
+FROM students t1
+INNER JOIN marks t2 
+ON t1.id = t2.studentid
+INNER JOIN disciplines t3 
+ON t2.disciplineid = t3.id
+WHERE t3.title = 'Math' AND t2.mark > 80;
+
+SELECT 
+	t1.first_name, 
+	AVG(t1.age) AS avg_age
+FROM students t1
+WHERE t1.first_name LIKE 'A%'
+GROUP BY t1.first_name;
